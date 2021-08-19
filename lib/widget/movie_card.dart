@@ -5,15 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:movies/model/movie.dart';
 
-final _lightColors = [
-  Colors.amber.shade300,
-  Colors.lightGreen.shade300,
-  Colors.lightBlue.shade300,
-  Colors.orange.shade300,
-  Colors.pinkAccent.shade100,
-  Colors.tealAccent.shade100
-];
-
 class MovieCardWidget extends StatelessWidget {
   MovieCardWidget({
     Key? key,
@@ -26,14 +17,12 @@ class MovieCardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    /// Pick colors from the accent colors based on index
-    final color = _lightColors[index % _lightColors.length];
     final time = DateFormat.yMMMd().format(movie.createdTime);
     final minHeight = 200.0;
     return Container(
       constraints: BoxConstraints(minHeight: 200, maxHeight: 300),
       child: Card(
-        color: Colors.blueGrey,
+        color: Colors.black54,
         child: Container(
           constraints: BoxConstraints(minHeight: minHeight),
           padding: EdgeInsets.fromLTRB(4.0, 1.0, 4.0, 8.0),

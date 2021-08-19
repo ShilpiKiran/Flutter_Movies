@@ -38,35 +38,14 @@ class _MovieFormWidgetState extends State<MovieFormWidget> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              // Container(
-              //   width: 200,
-              //   height: 200,
-              //   decoration: BoxDecoration(color: Colors.red[200]),
-              //   child: _image != null
-              //       ? Image.file(
-              //           _image,
-              //           width: 200.0,
-              //           height: 200.0,
-              //           fit: BoxFit.fitHeight,
-              //         )
-              //       : Container(
-              //           decoration: BoxDecoration(color: Colors.red[200]),
-              //           width: 200,
-              //           height: 200,
-              //           child: Icon(
-              //             Icons.camera_alt,
-              //             color: Colors.grey[800],
-              //           ),
-              //         ),
-              // ),
               Container(
                 width: 200,
                 height: 300,
-                decoration: BoxDecoration(color: Colors.red[200]),
+                decoration: BoxDecoration(color: Colors.red),
                 child: img != ''
                     ? imageFromBase64String(img)
                     : Container(
-                        decoration: BoxDecoration(color: Colors.red[200]),
+                        decoration: BoxDecoration(color: Colors.red),
                         width: 200,
                         height: 300,
                         child: Icon(
@@ -84,7 +63,6 @@ class _MovieFormWidgetState extends State<MovieFormWidget> {
                   child: Text('upload poster'),
                 ),
               ),
-
               buildTitle(),
               SizedBox(height: 8),
               buildDescription(),

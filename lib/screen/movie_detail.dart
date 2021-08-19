@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:movies/database/movie_database.dart';
@@ -45,7 +44,7 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
         body: isLoading
             ? Center(child: CircularProgressIndicator())
             : Card(
-                color: Colors.black54,
+                color: Colors.white12,
                 child: Container(
                   constraints: BoxConstraints(minHeight: 200),
                   padding: EdgeInsets.fromLTRB(4.0, 1.0, 4.0, 8.0),
